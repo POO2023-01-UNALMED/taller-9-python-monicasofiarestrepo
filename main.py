@@ -1,5 +1,5 @@
 from tkinter import *
-from math import *
+
 # Configuración ventana principal
 root = Tk()
 root.title("Calculadora POO")
@@ -27,6 +27,7 @@ pantalla = Entry(root, width=40, bg="black", fg="white", borderwidth=0, font=("a
 pantalla.grid(row=0, column=0, columnspan=4, padx=0, pady=0)
 label=Label(pantalla,width=40,height=2,bg="black", fg="white",borderwidth=0,textvariable=entrada)
 label.grid(row=0, column=0)  
+
 # Configuración botones
 boton_1 = Button(root, text="1", command=lambda: tecla(1),width=9, height=3, bg="white", fg="red", borderwidth=0, cursor="hand2").grid(row=1, column=0, padx=1, pady=1)
 boton_2 = Button(root, text="2", command=lambda: tecla(2),width=9, height=3, bg="white", fg="red", borderwidth=0, cursor="hand2").grid(row=1, column=1, padx=1, pady=1)
