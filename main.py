@@ -13,14 +13,14 @@ def tecla(t):
 def result():
     global var 
     try:
-        a=str(eval(var))#evalua una cadena como expresion de python retorna un resultado con el tipo analizado
+        a=str(eval(var))
         entrada.set(a) 
     except:
         entrada.set("")   
     var="" 
 
 var=""   
-entrada=StringVar()#Variable de control entrada asignada como tipo string 
+entrada=StringVar()
 
 # Configuración pantalla de salida 
 pantalla = Entry(root, width=40, bg="black", fg="white", borderwidth=0, font=("arial", 20, "bold"))
